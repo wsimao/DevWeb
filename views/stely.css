@@ -1,0 +1,129 @@
+:root {
+    --primary-color: #22a795a4;
+    --bg-color: #130f0d;
+    --text-color: #f0f0f5;
+    --light-color: rgba(255, 255, 255, 0.04);
+    --green-color:  #078307;
+    --white-color:  #f0f0f5;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: "Roboto", sans-serif;
+    height: 100%;
+}
+
+body {
+    height: 10vh;
+    display: flex;
+    flex-direction: column;
+    background: rgb(34,193,195);
+background: linear-gradient(171deg, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 100%);
+color: #f0f0f5;
+}
+
+form{
+    
+    background: rgba(0, 0, 0, 0.053);
+
+    width: 80%;
+    max-width: 500px;
+
+    margin: 50px auto;
+    padding: 32px 64px;
+
+    display: flex;
+    flex-direction: column;
+}
+
+form h2{
+    margin-bottom: 32px;
+    text-align: center;
+    color: var(--bg-color);
+}
+
+form h4{
+    padding: 32px 64px;
+    text-align: center;
+    color: var(--bg-color)
+}
+
+form h4 b{
+    color:rgba(0, 0, 255, 0.556);
+}
+
+div.input {
+    margin-bottom: 24px;
+    position: relative;
+}
+select,
+button {
+    width: 100%;
+
+    padding: 16px 0;
+
+    border:none;
+    border-bottom: 1px solid var(--primary-color);
+
+    background-color: transparent;
+
+    outline: none;
+
+    color: var(--text-color);
+    font-size: 1em;
+    
+}
+
+input,
+button {
+
+    width: 100%;
+
+    padding: 15px 0;
+
+    border:none;
+    border-bottom: 1px solid var(--primary-color);
+
+    background-color: transparent;
+
+    outline: none;
+
+    color: var(--text-color);
+    font-size: 1em;
+
+}
+
+
+button {
+    margin-top: 16px;
+    background-color: var(--primary-color);
+}
+
+button:hover{
+    margin-top: 16px;
+    background-color: var(--white-color);
+    color: #130f0d;
+}
+
+input ~ label {
+    position: absolute;
+    top: 16px;
+    left: 0;
+
+    color: rgba(255, 255, 255, 0.6) ;
+
+    transition: .4s;
+}
+
+
+input:focus ~ label,
+input:valid ~ label {
+    transform: translateY(-24px);
+    font-size: 0.8em;
+    letter-spacing: 0.1em;
+}
