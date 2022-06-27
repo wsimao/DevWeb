@@ -2,7 +2,8 @@ const mongoose = require('mongoose');
 mongoose.Promise = global.Promise;
 
 const modelShema = new mongoose.Schema({
-    name: String
+    name: String,
+    token: String
 });
 
 const modelName = 'List';
